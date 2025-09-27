@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MAKTEK</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+    <svg class="gear-background-svg" width="100%" height="100%">
+        <defs>
+          <pattern id="gearGrid" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+            <image href="gear.svg" x="0" y="0" width="20" height="20" opacity="0.2"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#gearGrid)" />
+      </svg>
+      
+
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="gear-animation">
+      <img src="gear.svg" class="gear medium" />
+    </div>
+  </div>
+
+  <!-- Background Gear Pattern -->
+  
+
+  <!-- Main Content -->
+  <div class="app hidden">
+
+    <!-- Logo with Glow -->
+    <header>
+      <img src="logo.png" alt="MAKTEK Logo" class="logo-glow" />
+    </header>
+
+    <!-- Cards Container -->
+    <main>
+      <div class="card-container">
+
+        <!-- Card Template -->
+        <a href="https://example.com/automobile-history" class="card-link">
+            <div class="card">
+              <div class="card-content">
+                <span class="icon">🚗</span>
+                <span class="title">Evolution of the Automobile</span>
+              </div>
+              <button class="kebab-btn" onclick="shareCard(event)">
+                ⋮
+              </button>
+            </div>
+          </a>
+        <!-- Repeat -->
+        <a href="https://example.com/automobile-history" class="card-link">
+            <div class="card">
+              <div class="card-content">
+                <span class="icon">🚗</span>
+                <span class="title">Evolution of the Automobile</span>
+              </div>
+              <button class="kebab-btn" onclick="shareCard(event)">
+                ⋮
+              </button>
+            </div>
+          </a>
+
+          <a href="https://example.com/automobile-history" class="card-link">
+            <div class="card">
+              <div class="card-content">
+                <span class="icon">🚗</span>
+                <span class="title">Evolution of the Automobile</span>
+              </div>
+              <button class="kebab-btn" onclick="shareCard(event)">
+                ⋮
+              </button>
+            </div>
+          </a>
+          <a href="https://example.com/automobile-history" class="card-link">
+            <div class="card">
+              <div class="card-content">
+                <span class="icon">🚗</span>
+                <span class="title">Evolution of the Automobile</span>
+              </div>
+              <button class="kebab-btn" onclick="shareCard(event)">
+                ⋮
+              </button>
+            </div>
+          </a>
+
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
