@@ -5,21 +5,12 @@ window.addEventListener("DOMContentLoaded", () => {
     }, 2500);
   });
   
-  document.getElementById("sharePageBtn").addEventListener("click", async () => {
-    if (navigator.share) {
-      await navigator.share({
-        title: "MAKTEK",
-        text: "Check out this awesome page!",
-        url: window.location.href,
-      });
-    } else {
-      alert("Sharing not supported on this device.");
-    }
-  });
+  function shareCard(event) {
+    event.preventDefault();
+    event.stopPropagation();
   
-  window.shareCard = async function () {
     if (navigator.share) {
-      await navigator.share({
+      navigator.share({
         title: "Evolution of the Automobile",
         text: "Check out this article!",
         url: window.location.href,
@@ -27,5 +18,5 @@ window.addEventListener("DOMContentLoaded", () => {
     } else {
       alert("Sharing not supported on this device.");
     }
-  };
+  }
   
