@@ -8,7 +8,7 @@
   body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(to bottom right, #2b9a7d, #12243b);
-    overflow: hidden;
+    overflow-x: hidden; overflow-y: auto;
     min-height: 100vh;
     position: relative;
   }
